@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Search</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="presentModal()">
+<script src="javascript.js"></script>
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+	
+  <!-- Modal content -->
+  <div class="modal-content">
+  	<input class="textbox" type="search" id="searchName" value="Search username..." onfocusout="searchDescription()" onfocus="delete_SearchText()" onkeyup="searchTrigger_withEnter(event)">
+  	<button class="searchbtn" id="searchButton" onclick="searchTrigger()"><b>Search</b></button>
+    <p class="invalid" id="notexists">Does not exists</p>
+    <img class="gitImage" src="profil.jpg">
+    <p class="next_to_pic" style="margin-top:-95px;">JohnEfth</p>
+	<p class="next_to_pic" style="font-size:20px;">No Name available...</p>
+	<p class="next_to_pic">No bio available....</p>
+	
+	<table style="width:100%;display:none;" id="reposTable">
+	  <tr>
+	    <th class="push" style="border-bottom:2px solid black">Repositories</th>
+	    <th class="img" style="border-bottom:2px solid black"></th>
+	    <th class="num" style="border-bottom:2px solid black"></th>
+	    <th class="img" style="border-bottom:2px solid black"></th>
+	    <th class="num" style="border-bottom:2px solid black"></th>
+	  </tr>
+	</table>
+
+  </div>
+
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+

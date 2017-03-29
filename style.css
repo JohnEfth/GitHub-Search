@@ -1,0 +1,122 @@
+
+/* Modal (background) */
+div.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: scroll; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+div.modal-content {
+    background-color: #fefefe;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    
+    margin-left: -320px;
+    margin-top: -60px;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%;
+    max-width: 600px;
+    height: 40px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/*Style for the Search Box*/
+input.textbox{
+    -webkit-appearance:none;
+    width: 75%;
+    height: 40px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    
+    margin-left: 5px;
+    font-size: 15px;
+    color: grey; 
+}
+/*Style for the Search Button*/
+button.searchbtn{
+    width: 20%;
+    height: 40px;
+    margin-left: 15px;
+    margin-top: -0.5cm;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: lightgrey; 
+    margin-bottom: 10px;
+ 
+}
+/*Style for the on hover for the Search button*/
+button.searchbtn:hover,
+button.searchbtn:focus {
+    background-color: lightblue;
+    border-color: lightblue; 
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+/*Style for the "Doesn't Exists" message removed so that is added when the username doesn't exists*/
+p.invalid{
+    display: none;
+    width: 98%;
+    height: 40px ;
+    text-indent: 10px;
+    line-height: 2;
+    background-color: rgb(255,204,204);
+    margin-left: 5px;
+    margin-top: -1px;
+    border: 1px solid rgb(153,0,0);
+    border-radius: 5px;
+    color: rgb(153,0,0);
+    font-size: 20px;
+}
+/*Style for the image of the requested Git User*/
+img.gitImage{
+    
+    margin-left: 5px;
+    display: none;
+    width: 100px;
+    height: 100px;
+}
+/*Style for the text beside the image of the requested Git user*/
+p.next_to_pic{
+    
+    display: none;
+    margin-left: 120px;
+    font-family: "Arial";
+}
+/*Style foe the table*/
+table, th, td {
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+    font-family: "Arial";
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-family: "Arial";
+}
+/*Style for the first row*/
+th.push{
+    width: 90%;
+}
+/*Style for the images inside the repositories' table*/
+th.img{
+    width: 5%
+}
+/*Style for the numbers inside the repositories' table*/
+th.num{
+    width: 5%;
+}
